@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    /* File Layout */
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    /* Environment Settings */
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler", // This allows extensionless imports
+    "lib": ["ESNext"],
+    "types": ["node"],
+
+    /* Other Outputs */
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+    "noEmit": false, // Set to false so you can still build the project
+
+    /* Stricter Typechecking Options */
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitAny": true,
+
+    /* Style Options */
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* Recommended Options */
+    "verbatimModuleSyntax": false, // Disabled to make internal imports easier
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowImportingTsExtensions": false // Keeps you from accidentally adding .ts to imports
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
